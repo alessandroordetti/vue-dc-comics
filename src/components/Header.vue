@@ -93,6 +93,7 @@ export default {
 
         & a{
             text-transform: uppercase;
+            font-weight: bold;
             color: black;
             text-decoration: none;
         }
