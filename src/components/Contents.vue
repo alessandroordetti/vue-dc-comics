@@ -1,12 +1,12 @@
 <template>
     <div>
-        <h2>Header</h2>
+        <h2>Contents</h2>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'IndexHeader',
+    name: 'IndexContents'
 }
 </script>
 
