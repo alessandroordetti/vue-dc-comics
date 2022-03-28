@@ -2,7 +2,7 @@
     <div class="background">
 
         <div class="contacts-wrapper">
-            <div class="contacts">
+            <div class="contacts-1">
                 <h3>
                     DC COMICS
                 </h3>
@@ -16,6 +16,8 @@
                     <li>News</li>
                 </ul>
 
+                <h3></h3>
+
                 <h3>SHOP</h3>
                 <ul>
                     <li>Shop DC</li>
@@ -23,8 +25,39 @@
                 </ul>
             </div>
 
-            <div class="dc-bigger-logo">
+            <div class="contacts-2">
+                <h3>DC</h3>
+                <ul>
+                    <li>Terms Of Use</li>
+                    <li>Privacy policy (new)</li>
+                    <li>Ad Choices</li>
+                    <li>Advertising</li>
+                    <li>Jobs</li>
+                    <li>Subscriptions</li>
+                    <li>Talent Workshop</li>
+                    <li>CPSC Certificates</li>
+                    <li>Ratings</li>
+                    <li>Shop Help</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
 
+            <div class="contacts-3">
+                <h3>
+                    Sites
+                </h3>
+
+                <ul>
+                    <li>DC</li>
+                    <li>MAD Magazine</li>
+                    <li>Dc Kids</li>
+                    <li>Dc Universe</li>
+                    <li>Dc Power Visa</li>
+                </ul>
+            </div>
+
+            <div class="dc-bigger-logo">
+                <img src="../assets/img/dc-logo-bg.png" alt="">
             </div>
         </div>
 
@@ -58,6 +91,16 @@ export default {
     h3 {
         margin: 0;
     }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        list-style-type: none;
+
+        & li {
+            margin-bottom: .4rem;
+        }
+    }
     
     .background {
         background-color: #303030e1;
@@ -69,6 +112,13 @@ export default {
         background-size: cover;
         height: 480px;
         color: white;
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 1rem;
+    }
+
+    .dc-bigger-logo img{
+        width: 90%;
     }
     
     .footer-wrapper {
