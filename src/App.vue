@@ -29,6 +29,5 @@ export default {
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  margin-top: 30px;
 }
 </style>
