@@ -82,7 +82,7 @@ export default {
     .header-wrapper {
         width: 70%;
         margin: 0 auto;
-        margin-bottom: 100px;
+        margin-bottom: 25px;
         display: flex;
         justify-content: space-between;
 

@@ -1,7 +1,13 @@
 <template>
     <div class="contents-wrapper">
-        <div class="contents">
+        <div class="jumbotron">
 
+        </div>
+
+        <div class="contents">
+            <div>
+
+            </div>
         </div>
 
         <div class="blue-section">
@@ -50,8 +56,19 @@ export default {
     .contents-wrapper {
         background-color: #0282f9;
 
+        & .jumbotron {
+            background-image: url('../assets/img/jumbotron.jpg');
+            height: 400px;
+            background-size: cover;
+        }
+
+        & .contents {
+            height: 200px;
+            background-color: black;
+        }
+
         img {
-            height: 50%;
+            height: 40%;
             margin-right: 1.5rem;
         }
     }
