@@ -11,25 +11,25 @@
                 <h3>Digital Comics</h3>
             </div>
 
-                <div>
+            <div>
                 <img src="../assets/img/buy-comics-digital-comics.png" alt="Digital Comics Logo">
 
                 <h3>Digital Comics</h3>
             </div>
 
-                <div>
+            <div>
                 <img src="../assets/img/buy-comics-digital-comics.png" alt="Digital Comics Logo">
 
                 <h3>Digital Comics</h3>
             </div>
 
-                <div>
+            <div>
                 <img src="../assets/img/buy-comics-digital-comics.png" alt="Digital Comics Logo">
 
                 <h3>Digital Comics</h3>
             </div>
 
-                <div>
+            <div>
                 <img src="../assets/img/buy-comics-digital-comics.png" alt="Digital Comics Logo">
 
                 <h3>Digital Comics</h3>
@@ -58,6 +58,7 @@ export default {
             color: white;
             display: flex;
             align-items: center;
+            padding: 1.5rem;
         }
     }
 </style>
