@@ -5,34 +5,10 @@
         </div>
 
         <div class="blue-section">
-            <div>
-                <img src="../assets/img/buy-comics-digital-comics.png" alt="Digital Comics Logo">
+            <div v-for="(element, index) in mainContents" :key=index>
+                <img :src="require(`@/assets/img/${element.image}`)" :alt="element.text">
 
-                <h3>Digital Comics</h3>
-            </div>
-
-            <div>
-                <img src="../assets/img/buy-comics-digital-comics.png" alt="Digital Comics Logo">
-
-                <h3>Digital Comics</h3>
-            </div>
-
-            <div>
-                <img src="../assets/img/buy-comics-digital-comics.png" alt="Digital Comics Logo">
-
-                <h3>Digital Comics</h3>
-            </div>
-
-            <div>
-                <img src="../assets/img/buy-comics-digital-comics.png" alt="Digital Comics Logo">
-
-                <h3>Digital Comics</h3>
-            </div>
-
-            <div>
-                <img src="../assets/img/buy-comics-digital-comics.png" alt="Digital Comics Logo">
-
-                <h3>Digital Comics</h3>
+                <h3>{{element.text}}</h3>
             </div>
         </div>
     </div>
@@ -40,14 +16,47 @@
 
 <script>
 export default {
-    name: 'IndexContents'
+    name: 'IndexContents',
+    data: function() {
+        return {
+            mainContents: [
+                {
+                    image: 'buy-comics-digital-comics.png',
+                    text: 'Digital Comics',
+                },
+                {
+                    image: 'buy-comics-shop-locator.png',
+                    text: 'DC Merchandise',
+                },
+                {
+                    image: 'buy-comics-subscriptions.png',
+                    text: 'Subscriptions',
+                },
+                {
+                    image: 'buy-comics-merchandise.png',
+                    text: 'DC Power Visa',
+                },
+                {
+                    image: 'buy-dc-power-visa.svg',
+                    text: 'Digital Comics',
+                },
+            ]
+        }
+    }
 }
 </script>
 
 <style lang="scss" scoped>
     .contents-wrapper {
         background-color: #0282f9;
+
+        img {
+            height: 50%;
+            margin-right: 1.5rem;
+        }
     }
+
+
 
     .blue-section {
         width: 65%;

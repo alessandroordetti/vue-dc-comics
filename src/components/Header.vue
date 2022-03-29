@@ -6,54 +6,10 @@
 
         <nav>
             <ul>
-                <li>
-                    <a href="#">
-                        Characters
+                <li v-for="(element, index) in navList" :key="index">
+                    <a :href="element.url">
+                        {{element.text}}
                     </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Comics
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Movies
-                    </a> 
-                </li>
-                <li>
-                    <a href="#">
-                        TV
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                    Games
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Collectibles
-                    </a> 
-                </li>
-                <li>
-                    <a href="#">
-                        Videos
-                    </a>
-                </li>
-                <li><a href="">
-                    Fans
-                    </a> 
-                </li>
-                <li>
-                    <a href="#">
-                        News
-                    </a> 
-                </li>
-                <li>
-                    <a href="#">
-                        Shop
-                    </a> 
                 </li>
             </ul>
         </nav>
@@ -63,6 +19,62 @@
 <script>
 export default {
     name: 'IndexHeader',
+    data: function () {
+        return {
+            navList: [
+                {
+                    text: 'Characters',
+                    active: false,
+                    url: '#',
+                },
+                                {
+                    text: 'Comics',
+                    active: false,
+                    url: '#',
+                },
+                                {
+                    text: 'Movies',
+                    active: false,
+                    url: '#',
+                },
+                                {
+                    text: 'TV',
+                    active: false,
+                    url: '#',
+                },
+                                {
+                    text: 'Games',
+                    active: false,
+                    url: '#',
+                },
+                                {
+                    text: 'Collectibles',
+                    active: false,
+                    url: '#',
+                },
+                                {
+                    text: 'Videos',
+                    active: false,
+                    url: '#',
+                },
+                                {
+                    text: 'Fans',
+                    active: false,
+                    url: '#',
+                },
+                                {
+                    text: 'News',
+                    active: false,
+                    url: '#',
+                },
+                                {
+                    text: 'Shop',
+                    active: false,
+                    url: '#',
+                },
+            ]
+        }
+    }
 }
 </script>
 
@@ -75,7 +87,7 @@ export default {
         justify-content: space-between;
 
         & .img-wrapper img {
-            width: 70%;
+            width: 75%;
         }
     }
     
